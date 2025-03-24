@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bratz: Lets Get Ready</title>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}	
+</script>
+	<style>
+	body{
+    margin: 0;
+    background-color:purple;
+}
+	header{background-color:deeppink;
+		text-align: center;}
+     wrapper {
+    margin: auto;
+    width:1050px;
+    display: block;
+    padding: 10px;
+}
+@font-face {
+   font-family:Bratzfont;
+   src: url( "FUNKHOUS.TTF");
+}
+		h1{font-family:Bratzfont;
+		font-size:50px;;
+		}
+	    #Crop{transform: translateX(-20px);}
+		#JeanS{transform: translateY(-10px) translateX(-10px);}
+		#RedS{transform:translateX(-36px) translateY(-40px);}
+		#Jean{}
+		#JeanCrop{}
+		#GoldS{transform: translateX(-20px) translateY(-30px);}
+		#neck{transform: translateX(-26px) translateY(-90px);}
+		#Brace{transform: translateX(-26px) translateY(-100px);}
+		
+		div.a{transform: translateY(-200px) translateX(1520px);
+		}
+
+		img.a{
+		display:block;
+		margin-left:-650px;
+	    transform: translateY(150px);
+		}
+div {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border:thick solid deeppink;
+    border-radius: 10px;
+    display:inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin-right:-400px;
+	transform: translateY(-800px) translateX(1050px);
+}
+		div.a{transform: translateY(-450px) translateX(2000px);
+		}
+
+		img.a{
+		display:block;
+		margin-left:-200px;
+	    transform: translateY(150px);
+		}
+		footer{
+		background-color:deeppink;}
+    </style>
+</head>
+<body>
+	<header><img src="Logo.png" width="300" height="" alt=""/>
+    <h1 align="center"> LETS GET READY</h1>
+	</header>
+	<wrapper>
+		<img class="a" src="Bratz Doll.png" width="400" height="1000" alt=""/>
+		
+	<div id="Div8" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+	<img src="Bracelet.png" draggable="true" ondragstart="dragstartHandler(event)" width="200" height="" id="Brace" alt=""/>
+	</div>
+	<div id="Div7" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+	<img src="Red Shoes.png" draggable="true" ondragstart="dragstartHandler(event)" width="200" height="200" id="RedS" alt=""/></div>
+	<div id="Div6" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+	<img src="Croptop.png"  draggable="true" ondragstart="dragstartHandler(event)" width="200" height="150" id="Crop" alt=""/>
+	</div>
+	<div id="Div5" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+	<img src="Jeans.png"  draggable="true" ondragstart="dragstartHandler(event)" width="100" height="150" id="Jean" alt=""/>
+	</div>
+	<div id="Div4" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="a">
+	<img src="Necklace.png"  draggable="true" ondragstart="dragstartHandler(event)" width="200" height="" id="neck" alt=""/>
+	</div>
+	<div id="Div3" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="a">
+	<img src="Gold Shoes.png"   draggable="true" ondragstart="dragstartHandler(event)" width="180" height="200" id="GoldS" alt=""/></div>
+	<div id="Div2" ondrop="dropHandler(event)"  ondragover="dragoverHandler(event)" class="a">
+	<img src="JeanCrop.png"   draggable="true" ondragstart="dragstartHandler(event)" width="150" height="150" id="JeanCrop" alt=""/>
+	</div>
+	<div id="Div1" ondrop="dropHandler(event)"  ondragover="dragoverHandler(event)" class="a">
+	<img src="Jean Skirt.png"  draggable="true" ondragstart="dragstartHandler(event)" width="170" height="" id="JeanS" alt=""/></div>
+    </wrapper>
+	<footer>© 2025, Deja Davis
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</body>
+</html>
